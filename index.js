@@ -11,6 +11,10 @@ app.get('/', (req, res)=>{
     res.send('API is Running ');
 });
 
+app.get('/categories', (req, res)=>{
+    res.send(categories);
+})
+
 app.listen(port, ()=>{
     console.log('Dragon News server runnung on port', port);
 })
